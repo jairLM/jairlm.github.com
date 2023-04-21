@@ -1,0 +1,195 @@
+/* 
+     azul: #1976D2
+     rosa: #FF4081
+     negro: #212121
+     azul claro: #BBDEFB
+     gris:#757575
+     naranja: #FF5252;
+     rosaclaro: #F8BBD0
+
+
+*/
+html{
+    font-family: 'Amaranth', sans-serif;
+
+}
+a{
+    text-decoration: none;
+    color: #FF5252;
+}
+
+a:hover{
+    opacity: 0.6;
+}
+
+a:focus{
+    background-color: #BBDEFB;
+}
+
+img{
+    max-width: 100%;
+}
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.title-item{
+    /* border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #FF5252; */
+    border-bottom: solid 2px #FF5252 ;
+    padding-bottom: 1em;
+    font-size: 2em;
+    /* padding: arriba, derecha, abajo, izquierda */
+    /* padding: arriba/abajo, derecha/izquierda */
+    
+}
+
+.container{
+    background: #1976D2;
+    background: -webkit-linear-gradient(to right, #1976D2, #c471ed, #f64f59); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1976D2, #c471ed, #f64f59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    max-width: 960px;    
+    width: 100%;
+    height: 80vh;
+    background-color: #fff;
+    box-shadow: 0 3px 6px #212121, 0 3px 6px #1976D2   ;  /*box-shadow: diferenciaHorizontal, diferenciaVertical, desnfoque, amplitud, colorSombra*/
+    border-radius: 4px ;
+    -webkit-border-radius: 4px ;
+    -moz-border-radius: 4px ;
+    -ms-border-radius: 4px ;
+    -o-border-radius: 4px ;
+    
+    position: relative;
+    animation-duration: 1s;
+    overflow:scroll;
+}
+
+.content{
+    padding: 1em;
+}
+td{
+    display: block;
+    width: 100%;
+}
+td:nth-of-type(1){
+    font-size: 1.5em;
+    font-weight: bold;
+    color:#7C4DFF ;
+    
+}
+th{
+    display: none;
+}
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    
+}
+
+.close{
+    display: inline-block;
+    background-color: #673AB7;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0 3px 2px #212121, 0 3px 2px #1976D2 ;
+    font-weight:300;
+    font-size: 1.3em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.paragraph{
+    line-height: 1.8em;
+    font-weight: 300;
+}
+
+.fa-star, .fa-star-half, .fa-star-half-stroke{
+    color: #FFA000;
+    
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, .table th{
+    padding: 1em;
+    text-align: left;
+}
+
+.table tr:nth-child(even){
+    background-color: #BBDEFB;
+
+}
+
+.year{
+    font-weight: bold;
+    color: #7C4DFF;
+    font-size: 1.2em;
+    margin-top: 1em;
+    display: inline-block;
+}
+.main-image{
+    float: left;
+    margin-right: 1em;
+    height: 250px;
+}
+
+.position{
+    background-color:#FF5252 ;
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 4px ;
+    -webkit-border-radius: 4px ;
+    -moz-border-radius: 4px ;
+    -ms-border-radius: 4px ;
+    -o-border-radius: 4px ;
+    margin-right: 0.5em;
+}
+
+@media (min-width:900px){
+    th{
+        display: table-cell;
+    }
+    td{
+        width: auto;
+        display: table-cell;
+
+    }
+    td:nth-of-type(1){
+        font-size: 1em;
+    }
+    .content{
+        padding: 1.8em;
+        
+    }
+}
+
+
+@media (min-height:550px){
+    .content{
+        height: 500px
+    };
+}
+
