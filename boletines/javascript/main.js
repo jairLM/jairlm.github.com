@@ -20,7 +20,7 @@ links.forEach(function(link){
         //funcion para ejecturar cierta accion despues de un periodo de tiempo (setTimeout, setInterval)
         
         setTimeout(function(){
-            location.href="/boletines";
+            location.href="/index.html";
         },600);
         
         return false;
