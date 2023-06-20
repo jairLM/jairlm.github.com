@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    font-family: 'Roboto', sans-serif;
+    
+}
+body{
+    background-image: url("/images/fondo-web-dev.jfif");
+    background-size:cover;
+    background-position: right top;
+    position: absolute;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.texts{
+    margin-left: 4rem;
+    z-index: 1;
+    color: #fff;
+}
+
+.title{
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    padding: 100px 0 50px 0;
+    width: 80%;
+}
+.subtitle{
+    font-size: 1.8rem;
+    margin: 0 0 50px 0;
+    width: 80%;
+   
+}
+button{
+    display: inline-block;
+    width: 5rem;
+    height: 2rem;
+    border-style: none;
+    font-size: 1rem;
+    background-color: #81D5FA;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+button:hover{
+    background-color: rgb(129, 213, 250, 0.5);
+    text-decoration: underline;
+}
+button a{
+    text-decoration: none;
+}
+
+
+
+img{
+    width: 500px;
+}

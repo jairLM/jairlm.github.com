@@ -1,0 +1,105 @@
+
+/*contenedor principal*/
+
+.contenedor-principal{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "nuevos-productos mas-vendido mas-vendido mas-vendido mas-vendido" 
+                         "nuevos-productos   ofertas      ofertas      ofertas     ofertas";
+                         
+
+    padding: 2em;
+    margin-top: 1em;
+    
+    background-color: #4fa8fb;
+    box-shadow: black 0px 3px 10px;
+    
+}
+
+.contenedor-principal .mas-vendido{
+    grid-area: mas-vendido;    
+   
+}
+.contenedor-principal .nuevos-productos{
+    grid-area: nuevos-productos;
+}
+
+.contenedor-principal .ofertas{
+    grid-area: ofertas;
+}
+
+
+
+.mas-vendido h3,hr .nuevos-productos h3{
+    margin: 0 0.5em;
+}
+.mas-vendido, .nuevos-productos, .ofertas{
+    background-color: #fff;
+    box-shadow: black 0px 3px 10px;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+}
+/*grid contenedores de productos*/
+.grid-tarjetas{
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(min(10em, 100%), 1fr));
+    width:90%;
+    margin: 0 auto;     
+}
+.mas-vendido{
+    min-height: 20em;
+}
+.grid-tarjetas-verticales{
+    display: grid;    
+    width: 90%; 
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(min(10em, 100%), 1fr));
+   
+}
+.tarjeta, .tarjetas-verticales{
+    background-color: #fff;
+    width: 90%;
+    height: 20em;    
+    margin: 1em;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3); 
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/*img productos*/
+.img img{
+    width: 50%;
+
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+@media screen and (max-width:700px){
+    .contenedor-principal{
+        grid-template-areas: " mas-vendido mas-vendido mas-vendido mas-vendido mas-vendido" 
+                             "ofertas      ofertas      ofertas     ofertas   ofertas"
+                             "nuevos-productos nuevos-productos nuevos-productos nuevos-productos nuevos-productos";
+        
+        margin: 0 auto;
+    }
+
+    .encabezado-principal{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "titulo titulo" " buscador buscador" " navegador navegador ";
+    }   
+    
+}
+
