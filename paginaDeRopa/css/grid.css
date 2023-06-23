@@ -56,11 +56,14 @@
 }
 .grid-tarjetas-verticales{
     display: grid;    
-    width: 90%; 
-    margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(min(10em, 100%), 1fr));
+    width: 100%; 
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(min(15em, 100%), 1fr));
    
 }
+/* .nuevos-productos{
+    min-width: 10em;
+} */
 .tarjeta, .tarjetas-verticales{
     background-color: #fff;
     width: 90%;
@@ -86,7 +89,7 @@
     justify-content: center;
     
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:900px){
     .contenedor-principal{
         grid-template-areas: " mas-vendido mas-vendido mas-vendido mas-vendido mas-vendido" 
                              "ofertas      ofertas      ofertas     ofertas   ofertas"
