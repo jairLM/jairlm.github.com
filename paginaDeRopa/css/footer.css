@@ -94,7 +94,8 @@
 .btnSuscribir{
     background-color: #4fa8fb;
     font-weight: bold;
-}
+    border: none;
+}   
 .facebook{
     justify-content: end;
 }

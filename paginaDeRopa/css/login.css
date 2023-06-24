@@ -1,29 +1,40 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     /* background: #11998e;  
     background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  
     background: linear-gradient(to right, #38ef7d, #11998e); */
-    background: url(../images/gym2000.jpg) no-repeat center center fixed;
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #000000, #434343);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #000000,#434343 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /* background: url(../images/gym-sportswear-2000.jpg) no-repeat center center fixed; */
     font-family: Arial, Helvetica, sans-serif;
     color:#fff;
+    
     
     
 }
 
 .contenedor-login{
-    width: 35%;
+    width: 40%;
     min-height: 40em;
-    background: linear-gradient(rgba(5,7,12,0.5), rgba(5,7,12,0.2));
+    background: linear-gradient(rgba(155,155,155,0.5), rgba(5,7,12,0.5));
     margin: auto;
     border-radius:5px ;
     -webkit-border-radius:5px ;
     -moz-border-radius:5px ;
     -ms-border-radius:5px ;
     -o-border-radius:5px ;
+    transform: translate(0, 20%);
+    -webkit-transform: translate(0, 20%);
+    -moz-transform: translate(0, 20%);
+    -ms-transform: translate(0, 20%);
+    -o-transform: translate(0, 20%);
 }
 
 .titulo-log{
@@ -40,7 +51,23 @@ body{
 
 .titulo-log h3, p{
     width: 90%;
-    margin: 0.5em 0;
+    margin: 1em 0;
+}
+.titulo-log h3{
+    letter-spacing: 0.3em;
+}
+.infoUsuario p{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.btnInput{
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    background-color: #1C376C;
+    color: #fff;
+    text-shadow: 0px 0px 5px;
 }
 
 .infoUsuario{
@@ -54,6 +81,19 @@ body{
 
 .infoInput, .btnInput{
     width: 100%;
-    min-height: 2em;
+    min-height: 2.5em;
     margin: 1em 0;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+@media screen and (max-width:900px){
+    .contenedor-login{
+        width: 80%;
+    }
 }
