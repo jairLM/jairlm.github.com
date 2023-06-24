@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background: #11998e;  
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  
+    background: linear-gradient(to right, #38ef7d, #11998e); */
+    background: url(../images/gym2000.jpg) no-repeat center center fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#fff;
+    
+    
+}
+
+.contenedor-login{
+    width: 35%;
+    min-height: 40em;
+    background: linear-gradient(rgba(5,7,12,0.5), rgba(5,7,12,0.2));
+    margin: auto;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+}
+
+.titulo-log{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+
+    
+    width: 80%;
+    margin: auto;
+    
+}
+
+.titulo-log h3, p{
+    width: 90%;
+    margin: 0.5em 0;
+}
+
+.infoUsuario{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 80%;
+    margin: 2em auto;
+
+}
+
+.infoInput, .btnInput{
+    width: 100%;
+    min-height: 2em;
+    margin: 1em 0;
+}
